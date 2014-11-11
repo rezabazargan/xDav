@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XDav", "XDav.csproj", "{C7DFD112-1DA4-4B07-AB6F-57A631B38B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XDav.Example", "..\XDav.Example\XDav.Example.csproj", "{299EABA7-7474-4ADD-83E1-A0F105504352}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XDav.Example", "XDav.Example\XDav.Example.csproj", "{299EABA7-7474-4ADD-83E1-A0F105504352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
