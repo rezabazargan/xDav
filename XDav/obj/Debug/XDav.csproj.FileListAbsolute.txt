@@ -2,3 +2,8 @@ c:\Users\r.mokhtarzadeh\documents\visual studio 2013\Projects\XDavTest\XDav\bin\
 c:\Users\r.mokhtarzadeh\documents\visual studio 2013\Projects\XDavTest\XDav\bin\Debug\XDav.pdb
 c:\Users\r.mokhtarzadeh\documents\visual studio 2013\Projects\XDavTest\XDav\obj\Debug\XDav.dll
 c:\Users\r.mokhtarzadeh\documents\visual studio 2013\Projects\XDavTest\XDav\obj\Debug\XDav.pdb
+C:\XDav\xDav\XDav\bin\Debug\XDav.dll
+C:\XDav\xDav\XDav\bin\Debug\XDav.pdb
+C:\XDav\xDav\XDav\obj\Debug\XDav.csprojResolveAssemblyReference.cache
+C:\XDav\xDav\XDav\obj\Debug\XDav.dll
+C:\XDav\xDav\XDav\obj\Debug\XDav.pdb

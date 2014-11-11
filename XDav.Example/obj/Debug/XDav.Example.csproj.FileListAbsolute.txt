@@ -1,0 +1,11 @@
+C:\XDav\xDav\XDav.Example\bin\XDav.Example.dll.config
+C:\XDav\xDav\XDav.Example\bin\XDav.Example.dll
+C:\XDav\xDav\XDav.Example\bin\XDav.Example.pdb
+C:\XDav\xDav\XDav.Example\bin\Microsoft.Web.Infrastructure.dll
+C:\XDav\xDav\XDav.Example\bin\Newtonsoft.Json.dll
+C:\XDav\xDav\XDav.Example\bin\XDav.dll
+C:\XDav\xDav\XDav.Example\bin\XDav.pdb
+C:\XDav\xDav\XDav.Example\bin\Microsoft.Web.Infrastructure.xml
+C:\XDav\xDav\XDav.Example\obj\Debug\XDav.Example.csprojResolveAssemblyReference.cache
+C:\XDav\xDav\XDav.Example\obj\Debug\XDav.Example.dll
+C:\XDav\xDav\XDav.Example\obj\Debug\XDav.Example.pdb
