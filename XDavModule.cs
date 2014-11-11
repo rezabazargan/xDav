@@ -25,15 +25,8 @@ namespace XDav
                     application.CompleteRequest();
                 }
             };
-            //context.EndRequest += context_EndRequest;
-        }
-
-        void context_EndRequest(object source, EventArgs e)
-        {
-            HttpApplication application = (HttpApplication)source;
-            HttpContext context = application.Context;
-            context.Response.Write("<hr><h1><font color=red>HelloWorldModule: End of Request</font></h1>");
 
         }
+
     }
 }
