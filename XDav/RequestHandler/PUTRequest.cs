@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Web;
 
 namespace XDav.RequestHandler
 {
-    public class PUTRequest : RequestBase
+    public class PutRequest : RequestBase
     {
         internal override Func<System.Web.HttpContext, bool> Condition
         {
@@ -17,7 +18,15 @@ namespace XDav.RequestHandler
 
         protected override void Handle()
         {
-            throw new NotImplementedException();
+            var ms = new MemoryStream();
+            Context.Request.InputStream.CopyTo(ms);
+            byte[] _requestInput = ms.ToArray();
+            using (FileStream _newFile = new FileStream(base.FullPath, FileMode.OpenOrCreate))
+            {
+                _newFile.Position = 0;
+                _newFile.Write(_requestInput, 0, _requestInput.Length);
+                _newFile.Close();
+            }
         }
     }
 }

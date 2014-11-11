@@ -28,10 +28,11 @@ namespace XDav.RequestHandler
         private List<RequestBase> RegisterHandles()
         {
             return new List<RequestBase>() { 
-                new PUTRequest(),
-                new GETRequest(),
+                new PutRequest(),
+                new GetRequest(),
                 new HeadRequest(),
-                new OptionRequest()
+                new OptionRequest(),
+                new UnlockRequest()
             };
         }
 

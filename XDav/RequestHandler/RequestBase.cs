@@ -22,7 +22,7 @@ namespace XDav.RequestHandler
         
         protected abstract void Handle();
 
-        private string FullPath
+        protected string FullPath
         {
             get
             {
@@ -30,7 +30,7 @@ namespace XDav.RequestHandler
             }
         }
 
-        private string FileName
+        protected string FileName
         {
             get
             {
