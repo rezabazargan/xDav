@@ -21,5 +21,19 @@ namespace XDav.Config
                 this["FileLocation"] = value;
             }
         }
+
+
+        [ConfigurationProperty("Name" ,DefaultValue="xdav",IsRequired=true)]
+        public string Name
+        {
+            get
+            {
+                return (string)this["Name"];
+            }
+            set
+            {
+                this["Name"] = value;
+            }
+        }
     }
 }

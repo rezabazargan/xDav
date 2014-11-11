@@ -6,3 +6,4 @@ C:\XDav\xDav\XDav\bin\Debug\XDav.dll
 C:\XDav\xDav\XDav\bin\Debug\XDav.pdb
 C:\XDav\xDav\XDav\obj\Debug\XDav.dll
 C:\XDav\xDav\XDav\obj\Debug\XDav.pdb
+C:\XDav\xDav\XDav\obj\Debug\XDav.csprojResolveAssemblyReference.cache

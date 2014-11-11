@@ -45,6 +45,12 @@
     <Compile Include="Config\FileLocationElement.cs" />
     <Compile Include="Config\XDavSection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestHandler\GETRequest.cs" />
+    <Compile Include="RequestHandler\HeadRequest.cs" />
+    <Compile Include="RequestHandler\OptionRequest.cs" />
+    <Compile Include="RequestHandler\PUTRequest.cs" />
+    <Compile Include="RequestHandler\RequestBase.cs" />
+    <Compile Include="RequestHandler\RequestManager.cs" />
     <Compile Include="XDavModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
