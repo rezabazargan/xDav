@@ -30,7 +30,7 @@ namespace XDav.RequestHandler
             return new List<RequestBase>() { 
                 new PutRequest(),
                 new GetRequest(),
-                new HeadRequest(),
+                new LockRequest(),
                 new OptionRequest(),
                 new UnlockRequest()
             };

@@ -33,6 +33,8 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,13 +46,17 @@
     <Compile Include="Config\ConfigManager.cs" />
     <Compile Include="Config\FileLocationElement.cs" />
     <Compile Include="Config\XDavSection.cs" />
+    <Compile Include="Helper\Enums.cs" />
+    <Compile Include="Helper\Extensions.cs" />
+    <Compile Include="Helper\GeneralHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestHandler\GETRequest.cs" />
-    <Compile Include="RequestHandler\HeadRequest.cs" />
+    <Compile Include="RequestHandler\LockRequest.cs" />
     <Compile Include="RequestHandler\OptionRequest.cs" />
     <Compile Include="RequestHandler\PUTRequest.cs" />
     <Compile Include="RequestHandler\RequestBase.cs" />
     <Compile Include="RequestHandler\RequestManager.cs" />
+    <Compile Include="RequestHandler\UnlockRequest.cs" />
     <Compile Include="XDavModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

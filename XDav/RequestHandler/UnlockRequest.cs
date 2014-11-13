@@ -21,7 +21,7 @@ namespace XDav.RequestHandler
             DirectoryInfo _dirInfo = new DirectoryInfo(ConfigManager.DavPath);
             FileInfo[] _lockedFiles = _dirInfo.GetFiles("*." + GetUnlockToken() + ".locked");
 
-
+            Context.SetStatus(StatusCode.OK);
             if (_lockedFiles.Length == 0)
                 throw new Exception("FileNot Found"); // TODO : Exception Handle
             else
