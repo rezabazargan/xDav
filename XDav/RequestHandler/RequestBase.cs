@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using XDav.Helper;
 
 namespace XDav.RequestHandler
 {
@@ -35,6 +36,15 @@ namespace XDav.RequestHandler
             get
             {
                 return Context.Request.Url.LocalPath.Replace(string.Format("/{0}/", XDav.Config.ConfigManager.XDavConfig.Name), "");
+            }
+        }
+
+
+        protected XDavFile File
+        {
+            get
+            {
+                return new XDavFile(FileName);
             }
         }
     }

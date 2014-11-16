@@ -49,8 +49,10 @@
     <Compile Include="Helper\Enums.cs" />
     <Compile Include="Helper\Extensions.cs" />
     <Compile Include="Helper\GeneralHelper.cs" />
+    <Compile Include="Helper\XdavFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestHandler\GETRequest.cs" />
+    <Compile Include="RequestHandler\HeadRequest.cs" />
     <Compile Include="RequestHandler\LockRequest.cs" />
     <Compile Include="RequestHandler\OptionRequest.cs" />
     <Compile Include="RequestHandler\PUTRequest.cs" />
