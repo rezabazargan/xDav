@@ -23,8 +23,8 @@ namespace XDav.RequestHandler
             Context.Response.AddHeader("LastModified", File.LastModified);
             //this.Context.Response.Headers.ETag = new EntityTagHeaderValue("\"a\"");
 
-            Context.Response.StatusCode = (int)StatusCode.OK;
-            Context.Response.Status = StatusCode.OK.ToString();
+            Context.SetStatus(StatusCode.OK);
+
         }
     }
 }

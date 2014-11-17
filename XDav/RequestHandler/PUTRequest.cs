@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using XDav.Helper;
 
 namespace XDav.RequestHandler
 {
@@ -27,6 +28,7 @@ namespace XDav.RequestHandler
                 _newFile.Write(_requestInput, 0, _requestInput.Length);
                 _newFile.Close();
             }
+            Context.SetStatus(StatusCode.OK);
         }
     }
 }

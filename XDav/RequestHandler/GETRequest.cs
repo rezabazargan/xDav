@@ -29,6 +29,8 @@ namespace XDav.RequestHandler
                 s.Position = 0;
                 s.CopyTo(base.Context.Response.OutputStream);
             }
+            Context.SetStatus(StatusCode.OK);
+            
         }
 
        

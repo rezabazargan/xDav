@@ -56,4 +56,16 @@ namespace XDav.Helper
         	HTTPVersionNotSupported	         =505 ,      //The server does not support (or refuses to support) the HTTP protocol version that was used in the request.
         	InsufficientStorage              =507,
     }
+
+    public enum HttpVerb
+    {
+        POST,
+        GET,
+        PUT,
+        DELETE,
+        LOCK,
+        UNLOCK,
+        OPTION,
+        HEAD
+    }
 }

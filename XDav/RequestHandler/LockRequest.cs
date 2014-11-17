@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using XDav.Config;
+using XDav.Helper;
 
 namespace XDav.RequestHandler
 {
@@ -17,8 +18,6 @@ namespace XDav.RequestHandler
 
         protected override void Handle()
         {
-
-           
             DirectoryInfo _dirInfo = new DirectoryInfo(ConfigManager.DavPath);
             FileInfo _fileInfo = _dirInfo.GetFiles().First(f => f.Name == FileName);
             UnicodeEncoding uniEncoding = new UnicodeEncoding();
@@ -36,7 +35,7 @@ namespace XDav.RequestHandler
                    //TODO ExceptionHandle
                 }
             }
-
+            Context.SetStatus(StatusCode.OK);
         }
     }
 }

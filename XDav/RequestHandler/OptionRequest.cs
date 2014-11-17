@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XDav.Helper;
 
 namespace XDav.RequestHandler
 {
@@ -15,7 +16,20 @@ namespace XDav.RequestHandler
 
         protected override void Handle()
         {
-            throw new NotImplementedException();
+
+            StringBuilder _allowedVerbs = new StringBuilder();
+            foreach (string enumName in Enum.GetNames(typeof(HttpVerb)))
+            {
+                HttpVerb httpVerb = (HttpVerb)Enum.Parse(typeof(HttpVerb), enumName, true);
+                _allowedVerbs.Append(enumName.ToUpper() + ", ");
+            }
+
+            base.Context.Response.Headers.Add("DAV", "1, 2, 3");
+            base.Context.Response.Headers.Add("Public", _allowedVerbs.ToString());
+            base.Context.Response.Headers.Add("Allow", _allowedVerbs.ToString());
+
+            Context.SetStatus(StatusCode.OK);
+
         }
     }
 }
