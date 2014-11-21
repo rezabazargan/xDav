@@ -20,13 +20,15 @@ Add this section at the first of Configuration Node
   
   
 Name="xdav"
-this is a key that couses to xDav module find the webdave requestes, it meand when your request contains "/xdav/filename.docx", that requests handle with xDav module
+
+this is a key that couses to xDav module find the webdave requestes, it meand when your request contains '/xdav/filename.docx', that requests handle with xDav module
+
 ------------------------
-<FileLocation URL="xdav" PathType="Local"></FileLocation>
 when you set PathType as "Local" it means you have a foldet in your root web Folder with "URL" name,
+<FileLocation URL="xdav" PathType="Local"></FileLocation>
+
 and when you set PathType as "Server" you have enter full Server path in "URL" like :
 <FileLocation URL="c:\webdav" PathType="Local"></FileLocation>
-
 
 
 And you should Add module settings to your Wen.Config
