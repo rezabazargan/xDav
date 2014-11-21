@@ -29,12 +29,14 @@ FileLocation URL="xdav" PathType="Local"
 And when you set PathType as "Server" you have enter full Server path in "URL" like:
 FileLocation URL="c:\webdav" PathType="Local" 
 
-
+<pre>
 And you should Add module settings to your Wen.Config
-<system.webServer>
+<!--<system.webServer>
     <modules>
       <add name="XDav" type="XDav.XDavModule, XDav"/>
     </modules>
   </system.webServer>
+  -->
+  </pre>
   
   
