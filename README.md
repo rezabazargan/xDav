@@ -31,16 +31,16 @@ FileLocation URL="c:\webdav" PathType="Local"
 
 <pre>
 And you should Add module settings to your Wen.Config
-<!--<system.webServer>
+<system.webServer>
     <modules>
       <add name="XDav" type="XDav.XDavModule, XDav"/>
     </modules>
   </system.webServer>
-  -->
+  
   </pre>
   
   Use:
-  ------------------
+
 <pre>
 install the package from nuget:
 
