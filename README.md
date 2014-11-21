@@ -1,13 +1,12 @@
 XDav
 ====
 
-Take A look at Example Project
-
-
-A .Net Module for WebDAV 
+xDav is a .Net Module For WebDAV Standard base on Http Protocol ,you can check the source code and the example to see how does it work 
 
 
 Web Config:
+---
+<pre>
 Add this section at the first of Configuration Node 
  <configSections>
     <section name="XDavConfig" type="XDav.Config.XDavConfig, XDav" allowLocation="true" allowDefinition="Everywhere"/>
@@ -17,6 +16,7 @@ Add this section at the first of Configuration Node
     <XDavConfig Name="xdav">
     <FileLocation URL="xdav" PathType="Local"></FileLocation>
   </XDavConfig>
+    </pre>
     
 Name="xdav"
 
@@ -24,10 +24,10 @@ This is a key that couses to xDav module find the WebDAV requests, it means when
 
 ------------------------
 When you set PathType as "Local" it means you have a foldet in your root web Folder with "URL" name,
-<FileLocation URL="xdav" PathType="Local"></FileLocation>
+FileLocation URL="xdav" PathType="Local"
 
 And when you set PathType as "Server" you have enter full Server path in "URL" like:
-<FileLocation URL="c:\webdav" PathType="Local"></FileLocation>
+FileLocation URL="c:\webdav" PathType="Local" 
 
 
 And you should Add module settings to your Wen.Config
