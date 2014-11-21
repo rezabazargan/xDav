@@ -1,7 +1,7 @@
 XDav
 ====
 
-Take A look at Excample Project
+Take A look at Example Project
 
 
 A .Net Module for WebDAV 
