@@ -44,8 +44,8 @@ And you should Add module settings to your Wen.Config :
  System.webServer >
     modules>
      add name="XDav" type="XDav.XDavModule, XDav"/>
- < /modules>
-  < /system.webServer>
+  /modules>
+   /system.webServer>
   </code>
 </pre>
   
