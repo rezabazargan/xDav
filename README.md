@@ -54,6 +54,6 @@ And you should Add module settings to your Wen.Config :
 <pre>
 install the package from nuget:
 
-PM> Install-Package MvcReportViewer
+PM> Install-Package XDav
 </pre>
   
