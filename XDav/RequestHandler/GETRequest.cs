@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sphorium.WebDAV.Server.Framework.BaseClasses;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,30 +10,26 @@ using XDav.Helper;
 
 namespace XDav.RequestHandler
 {
-    public class GetRequest :RequestBase
+    public class DavGet : DavGetBase
     {
-        internal override Func<System.Web.HttpContext, bool> Condition
+        public DavGet()
         {
-            get { return r => r.Request.HttpMethod.ToLower() == "get"; }
+            this.ProcessDavRequest += new DavProcessEventHandler(DavGet_ProcessDavRequest);
         }
-        
 
-        protected override void Handle()
+        private void DavGet_ProcessDavRequest(object sender, EventArgs e)
         {
-            DirectoryInfo _dirInfo = new DirectoryInfo(ConfigManager.DavPath);
-            FileInfo _fileInfo = _dirInfo.GetFiles().First(f => f.Name == FileName); 
+            FileInfo _fileInfo = FileWrapper.Current.File.FileInfo;
 
             using (var s = new FileStream(_fileInfo.FullName, FileMode.Open, FileAccess.Read))
             {
+
                 var ms = new MemoryStream();
                 s.CopyTo(ms);
                 s.Position = 0;
-                s.CopyTo(base.Context.Response.OutputStream);
+                this.ResponseOutput = ms.ToArray();
+                //s.CopyTo(FileWrapper.Current.Context.Response.OutputStream);
             }
-            Context.SetStatus(StatusCode.OK);
-            
         }
-
-       
     }
 }

@@ -27,7 +27,7 @@ namespace XDav.Config
                     case PathType.Server:
                         return location.URL;
                     case PathType.Local:
-                        return HttpContext.Current.Server.MapPath(location.URL);
+                        return HttpContext.Current.Server.MapPath( "/" + location.URL);
                     default:
                         return location.URL;
                 }

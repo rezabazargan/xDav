@@ -1,0 +1,8 @@
+﻿@model IEnumerable<string>
+
+<ul>
+    @foreach(var file in Model)
+    {
+        <li> <a href="#" class="fileLink" >@Html.Raw(file)</a> </li>
+    }
+</ul>

@@ -45,6 +45,13 @@ namespace XDav.Helper
                 return _fileInfo.LastWriteTime.ToUniversalTime().ToString();
             }
         }
+        public FileInfo FileInfo
+        {
+            get
+            {
+                return _fileInfo;
+            }
+        }
 
     }
 }

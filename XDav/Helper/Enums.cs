@@ -65,7 +65,7 @@ namespace XDav.Helper
         DELETE,
         LOCK,
         UNLOCK,
-        OPTION,
+        OPTIONS,
         HEAD
     }
 }

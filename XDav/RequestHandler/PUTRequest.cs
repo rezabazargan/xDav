@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sphorium.WebDAV.Server.Framework.BaseClasses;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,26 +10,64 @@ using XDav.Helper;
 
 namespace XDav.RequestHandler
 {
-    public class PutRequest : RequestBase
+    public class DavPut : DavPutBase
     {
-        internal override Func<System.Web.HttpContext, bool> Condition
+        public DavPut()
         {
-            get { return r => r.Request.HttpMethod.ToLower() == "put"; }
+            this.ProcessDavRequest += new DavProcessEventHandler(DavPut_ProcessDavRequest);
         }
 
-
-        protected override void Handle()
+        private void DavPut_ProcessDavRequest(object sender, EventArgs e)
         {
-            var ms = new MemoryStream();
-            Context.Request.InputStream.CopyTo(ms);
-            byte[] _requestInput = ms.ToArray();
-            using (FileStream _newFile = new FileStream(base.FullPath, FileMode.OpenOrCreate))
+            FileInfo _fileInfo = FileWrapper.Current.File.FileInfo;
+            //Check to see if a lock already exists
+            DirectoryInfo _dirInfo = _fileInfo.Directory;
+            try
+            {
+                if (_dirInfo == null)
+                {// base.AbortRequest(HttpStatusCodes.ClientErrors.NotFound);
+                }
+                else
+                {
+                    if (!base.OverwriteExistingResource)
+                    {
+                        //Check to see if the resource already exists
+                        //if (FileWrapper.Current.File.FileInfo != null)
+                        //    base.AbortRequest(DavPutResponseCode.Conflict);
+                        //else
+                        SaveFile();
+                    }
+                    else
+                        SaveFile();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void SaveFile()
+        {
+            byte[] _requestInput = base.GetRequestInput();
+            using (FileStream _newFile = new FileStream(FileWrapper.Current.FullPath, FileMode.OpenOrCreate))
             {
                 _newFile.Position = 0;
                 _newFile.Write(_requestInput, 0, _requestInput.Length);
                 _newFile.Close();
             }
-            Context.SetStatus(StatusCode.OK);
+
+            DeleteLockFile(FileWrapper.Current.File.FileInfo);
+        }
+
+        private void DeleteLockFile(FileInfo fileInfo)
+        {
+            fileInfo.Directory.GetFiles().ToList().ForEach(f => { 
+                if(f.Name.StartsWith(fileInfo.Name) && f.Name.EndsWith(".locked"))
+                {
+                    f.Delete();
+                }
+            });
         }
     }
 }

@@ -19,7 +19,7 @@ namespace XDav.Helper
         public static void SetStatus(this HttpContext context, StatusCode statusCode)
         {
             context.Response.StatusCode = (int)statusCode;
-            context.Response.Status = statusCode.ToString();
+            //context.Response.Status = statusCode.ToString();
         }
     }
 }

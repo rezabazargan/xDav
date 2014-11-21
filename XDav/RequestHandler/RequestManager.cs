@@ -10,40 +10,41 @@ namespace XDav.RequestHandler
     public class RequestManager
     {
 
-        public RequestManager()
-        {
-        }
+        //public RequestManager()
+        //{
+        //}
 
-        private List<RequestBase> _handles;
-        internal List<RequestBase> Handlers
-        {
-            get
-            {
-                if(_handles == null)
-                    _handles = RegisterHandles();
-                return _handles;
-            }
-        }
+        //private List<RequestBase> _handles;
+        //internal List<RequestBase> Handlers
+        //{
+        //    get
+        //    {
+        //        if(_handles == null)
+        //            _handles = RegisterHandles();
+        //        return _handles;
+        //    }
+        //}
 
-        private List<RequestBase> RegisterHandles()
-        {
-            return new List<RequestBase>() { 
-                new PutRequest(),
-                new GetRequest(),
-                new LockRequest(),
-                new OptionRequest(),
-                new UnlockRequest()
-            };
-        }
+        //private List<RequestBase> RegisterHandles()
+        //{
+        //    return new List<RequestBase>() { 
+        //        new PutRequest(),
+        //        new GetRequest(),
+        //        new LockRequest(),
+        //        new OptionRequest(),
+        //        new UnlockRequest(),
+        //        new HeadRequest()
+        //    };
+        //}
 
 
-        public void HandleRequest(HttpContext context)
-        {
-            Handlers.ForEach(h => {
-                if (h.Condition(context))
-                    h.HandelRequest(context);
-            });
-        }
+        //public void HandleRequest(HttpContext context)
+        //{
+        //    Handlers.ForEach(h => {
+        //        if (h.Condition(context))
+        //            h.HandelRequest(context);
+        //    });
+        //}
 
     }
 }
