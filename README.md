@@ -39,4 +39,11 @@ And you should Add module settings to your Wen.Config
   -->
   </pre>
   
+  Use:
+  ------------------
+<pre>
+install the package from nuget:
+
+PM> Install-Package MvcReportViewer
+</pre>
   
