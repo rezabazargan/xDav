@@ -6,41 +6,51 @@ xDav is a .Net Module For WebDAV Standard base on Http Protocol ,you can check t
 
 Web Config:
 ---
-<pre>
-Add this section at the first of Configuration Node 
- <configSections>
-    <section name="XDavConfig" type="XDav.Config.XDavConfig, XDav" allowLocation="true" allowDefinition="Everywhere"/>
-  </configSections>
-  
+Add this section at the first of Configuration Node <pre>
+<code>
+
+ < configSections>
+< section name="XDavConfig" type="XDav.Config.XDavConfig, XDav" allowLocation="true" allowDefinition="Everywhere"/>
+< /configSections>
+  </code>
   Add this Section To your Configuration File too
-    <XDavConfig Name="xdav">
-    <FileLocation URL="xdav" PathType="Local"></FileLocation>
-  </XDavConfig>
+  <code>
+< XDavConfig Name="xdav">
+    < FileLocation URL="xdav" PathType="Local"></FileLocation>
+< /XDavConfig>
+  </code>
     </pre>
     
-Name="xdav"
+ Name="xdav" <br>
 
-This is a key that couses to xDav module find the WebDAV requests, it means when your request contains '/xdav/filename.docx', that requests handle with xDav module
+This is a key that couses to xDav module find the WebDAV requests, it means when your request contains '/xdav/filename.docx', that requests handle with xDav module.
 
-------------------------
+<br>
 When you set PathType as "Local" it means you have a foldet in your root web Folder with "URL" name,
-FileLocation URL="xdav" PathType="Local"
+<br>
+<code>
+< FileLocation URL="xdav" PathType="Local" >
+</code>
 
 And when you set PathType as "Server" you have enter full Server path in "URL" like:
+<br>
+<code>
 FileLocation URL="c:\webdav" PathType="Local" 
-
+</code>
 <pre>
-And you should Add module settings to your Wen.Config
-<system.webServer>
-    <modules>
-      <add name="XDav" type="XDav.XDavModule, XDav"/>
-    </modules>
-  </system.webServer>
-  
-  </pre>
+And you should Add module settings to your Wen.Config :
+
+<code>
+ System.webServer >
+    modules>
+     add name="XDav" type="XDav.XDavModule, XDav"/>
+ < /modules>
+  < /system.webServer>
+  </code>
+</pre>
   
   Use:
-
+--
 <pre>
 install the package from nuget:
 
