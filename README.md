@@ -35,7 +35,7 @@ When you set PathType as "Local" it means you have a foldet in your root web Fol
 And when you set PathType as "Server" you have enter full Server path in "URL" like:
 <br>
 <code>
-FileLocation URL="c:\webdav" PathType="Local" 
+FileLocation URL="c:\dav\folder" PathType="Server" 
 </code>
 <pre>
 And you should Add module settings to your Wen.Config :
