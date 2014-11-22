@@ -1,7 +1,7 @@
 XDav
 ====
 
-xDav is a .Net Module For WebDAV Standard base on Http Protocol ,you can check the source code and the example to see how does it work 
+xDav is a .Net Module For <a href='http://webdav.org/'> WebDAV </a> Standard base on Http Protocol ,you can check the source code and the example to see how does it work 
 
 
 Web Config:
