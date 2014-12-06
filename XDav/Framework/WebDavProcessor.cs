@@ -119,7 +119,8 @@ namespace Sphorium.WebDAV.Server.Framework
             var e = XdavEvents.Current.XdavOnProcessingHandler(new XdavOnProcessingEventArg()
             {
                 Context = httpApplication,
-                HttpVerp = verb
+                HttpVerp = verb,
+                File  = FileWrapper.Current.File
             });
             if (!e.AllowContinue)
                 return;
@@ -151,7 +152,8 @@ namespace Sphorium.WebDAV.Server.Framework
                 XdavEvents.Current.XdavOnExceptionHandler(new XdavOnExceptionEventArg() { 
                     Exception = ex,
                     Context = httpApplication,
-                    HttpVerp = verb
+                    HttpVerp = verb,
+                    File = FileWrapper.Current.File
                 });
             }
 
@@ -173,7 +175,8 @@ namespace Sphorium.WebDAV.Server.Framework
             XdavEvents.Current.XdavOnProcessedHandler(new XdavOnProcessedEventArg() { 
                 Context = httpApplication,
                 HttpVerp = verb,
-                StatusCode = _statusCode
+                StatusCode = _statusCode,
+                File = FileWrapper.Current.File
             });
 
 		}

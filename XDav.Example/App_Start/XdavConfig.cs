@@ -21,7 +21,7 @@ namespace XDav.Example.App_Start
 
                 })
                 .OnException(ex => { 
-                    //ex.Exception.Message
+
                 });
             });
         }

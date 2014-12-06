@@ -25,9 +25,6 @@ namespace XDav
                     FileWrapper.Create(context.Context);
                     WebDavProcessor p = new WebDavProcessor(Assembly.GetExecutingAssembly());
                     p.ProcessRequest(context);
-
-                    //new XDav.RequestHandler.RequestManager().HandleRequest(context.Context);
-                    //context.CompleteRequest();
                 }
             };
 
