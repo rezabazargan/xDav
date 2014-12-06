@@ -24,5 +24,30 @@ namespace XDav.Helper
 
             return _propFilePath;
         }
+
+        internal static HttpVerb GetVerb(string verb)
+        {
+            switch (verb.ToUpper())
+            {
+                case "POST" :
+                    return HttpVerb.POST;
+                case "GET" :
+                    return HttpVerb.GET;
+                case "PUT":
+                    return HttpVerb.PUT;
+                case "DELETE" :
+                   return HttpVerb.DELETE;
+                case "LOCK":
+                    return HttpVerb.LOCK;
+                case "UNLOCK":
+                    return HttpVerb.UNLOCK;
+                case "OPTIONS":
+                    return HttpVerb.OPTIONS;
+                case "HEAD":
+                    return HttpVerb.HEAD;
+                default:
+                    return HttpVerb.GET;
+            }
+        }
     }
 }

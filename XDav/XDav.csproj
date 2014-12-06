@@ -106,6 +106,12 @@
     <Compile Include="RequestHandler\RequestBase.cs" />
     <Compile Include="RequestHandler\RequestManager.cs" />
     <Compile Include="RequestHandler\UnlockRequest.cs" />
+    <Compile Include="Settings\XdavEventArg.cs" />
+    <Compile Include="Settings\XdavEvents.cs" />
+    <Compile Include="Settings\XdavOnExceptionEventArg.cs" />
+    <Compile Include="Settings\XdavOnProcessedEventArg.cs" />
+    <Compile Include="Settings\XdavOnProcessingEventArg.cs" />
+    <Compile Include="Settings\XDavSettings.cs" />
     <Compile Include="XDavModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

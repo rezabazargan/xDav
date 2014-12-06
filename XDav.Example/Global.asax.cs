@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using XDav.Example.App_Start;
 
 namespace XDav.Example
 {
@@ -16,6 +17,7 @@ namespace XDav.Example
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            XdavConfig.Register();
         }
     }
 }

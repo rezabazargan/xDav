@@ -11,3 +11,4 @@ D:\Projects\Tools\XDav\xDav\XDav\bin\Debug\XDav.dll
 D:\Projects\Tools\XDav\xDav\XDav\bin\Debug\XDav.pdb
 D:\Projects\Tools\XDav\xDav\XDav\obj\Debug\XDav.dll
 D:\Projects\Tools\XDav\xDav\XDav\obj\Debug\XDav.pdb
+D:\Projects\Tools\XDav\xDav\XDav\obj\Debug\XDav.csprojResolveAssemblyReference.cache

@@ -10,6 +10,8 @@ using System.Reflection;
 using System.Web;
 using Sphorium.WebDAV.Server.Framework.BaseClasses;
 using Sphorium.WebDAV.Server.Framework.Interfaces;
+using XDav.Settings;
+using XDav.Helper;
 
 namespace Sphorium.WebDAV.Server.Framework
 {
@@ -107,8 +109,21 @@ namespace Sphorium.WebDAV.Server.Framework
 		/// </remarks>
 		public void ProcessRequest(HttpApplication httpApplication)
 		{
+           
+
 			if (httpApplication == null)
 				throw new ArgumentNullException("httpApplication", InternalFunctions.GetResourceString("ArgumentNullException", "HttpApplication"));
+
+            var verb= GeneralHelper.GetVerb(httpApplication.Request.HttpMethod);
+
+            var e = XdavEvents.Current.XdavOnProcessingHandler(new XdavOnProcessingEventArg()
+            {
+                Context = httpApplication,
+                HttpVerp = verb
+            });
+            if (!e.AllowContinue)
+                return;
+
 
 			//Set the status code to Method Not Allowed by default
 			int _statusCode = 405;
@@ -116,7 +131,7 @@ namespace Sphorium.WebDAV.Server.Framework
 			string _httpMethod = httpApplication.Request.HttpMethod;
 
 			InternalFunctions.WriteDebugLog("Processing HttpMethod " + _httpMethod);
-			//try
+			try
 			{
 				if (this.__davMethodList.ContainsKey(_httpMethod))
 				{
@@ -131,11 +146,14 @@ namespace Sphorium.WebDAV.Server.Framework
 					}
 				}
 			}
-			//catch (Exception ex)
-			//{
-			//    InternalFunctions.WriteDebugLog("Error processing HttpMethod " + _httpMethod + 
-			//        Environment.NewLine + "Message: " + ex.Message);
-			//}
+            catch (Exception ex)
+            {
+                XdavEvents.Current.XdavOnExceptionHandler(new XdavOnExceptionEventArg() { 
+                    Exception = ex,
+                    Context = httpApplication,
+                    HttpVerp = verb
+                });
+            }
 
 			InternalFunctions.WriteDebugLog("Completed processing HttpMethod " + _httpMethod + " status code returned: " + _statusCode);
 
@@ -151,6 +169,13 @@ namespace Sphorium.WebDAV.Server.Framework
 				//httpApplication.Request.InputStream.Close();
 				httpApplication.Response.End();
 			}
+
+            XdavEvents.Current.XdavOnProcessedHandler(new XdavOnProcessedEventArg() { 
+                Context = httpApplication,
+                HttpVerp = verb,
+                StatusCode = _statusCode
+            });
+
 		}
 
 		#region Private Properties
