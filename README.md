@@ -1,38 +1,34 @@
-XDav
-====
+# xDav
 
-A .Net Module for WebDAV 
+xDav is .net server mudole for webdav standard . its allow you to handle your webdav requests easily
 
+you can get the a liberary and webconfig settings from nuget:
 
-Web Config:
-Add this section at the first of Configuration Node 
- <configSections>
+```sh
+PM> Install-Package xDav
+```
+
+after installin that package your web.config has changed
+```sh
+  <configSections>
     <section name="XDavConfig" type="XDav.Config.XDavConfig, XDav" allowLocation="true" allowDefinition="Everywhere"/>
   </configSections>
-  
-  Add this Section To your Configuration File too
-    <XDavConfig Name="xdav">
-    <FileLocation URL="xdav" PathType="Local"></FileLocation>
-  </XDavConfig>
-    
-Name="xdav"
+```
+this is the config section, and doesn't need any changes
 
-This is a key that couses to xDav module find the WebDAV requests, it means when your request contains '/xdav/filename.docx', that requests handle with xDav module
-
-------------------------
-When you set PathType as "Local" it means you have a foldet in your root web Folder with "URL" name,
-<FileLocation URL="xdav" PathType="Local"></FileLocation>
-
-And when you set PathType as "Server" you have enter full Server path in "URL" like:
-<FileLocation URL="c:\webdav" PathType="Local"></FileLocation>
-
-
-And you should Add module settings to your Wen.Config
-<system.webServer>
+```sh
+  <system.webServer>
     <modules>
       <add name="XDav" type="XDav.XDavModule, XDav"/>
     </modules>
   </system.webServer>
-  
-  
+```
+it contains Adding xDav HttlModule and no need any changes
+
+```sh
+  <XDavConfig Name="xdav">
+    <FileLocation URL="xdav" PathType="Local"></FileLocation>
+  </XDavConfig>
+```
+the "Name" meens is when your request contans "/xdav/" [ value of "Name"], this request handled by xDav
 
