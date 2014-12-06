@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavCopyBase">
+    <Position X="16.25" Y="21" Width="2" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavCopyBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavCopyBase.DavCopyResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavCopyBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavCopyMoveBase">
+    <Position X="17" Y="15" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavCopyMoveBase.cs</FileName>
+      <HashCode>MACAEAAIAAAAAgAAAARAIAQACAAAABCAAAIAAEAMAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavCopyMoveBase.DavCopyMoveResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavCopyMoveBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavDeleteBase">
+    <Position X="25.25" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavDeleteBase.cs</FileName>
+      <HashCode>IAAAIAAIAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavDeleteBase.DavDeleteResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavDeleteBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavGetBase">
+    <Position X="21.75" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavGetBase.cs</FileName>
+      <HashCode>AAAIAAAAAAAAAAAACAAAAAAAAAAAAAQAAAAwBAIAhAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavGetBase.DavGetResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavGetBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavHeadBase">
+    <Position X="39.75" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavHeadBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavLockBase">
+    <Position X="43.25" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavLockBase.cs</FileName>
+      <HashCode>IAAAAQCIAAAIAAAAAAIAIAAAgAAAAgAAAgAAAAgEgAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Delegate Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavLockBase.DavRefreshLockEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavLockBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavLockBase.DavLockResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavLockBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMethodBase">
+    <Position X="35.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavMethodBase.cs</FileName>
+      <HashCode>AEAQAAAAAiAAAiIAAEAAAQkJEACCAM0AAACAUAIEAIg=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMethodBase.DavRequestEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMethodBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMethodBase.DavProcessEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMethodBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMethodBase.DavInternalProcessHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMethodBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMethodBase.DavRequestValidator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMethodBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMethodBase.ServerResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMethodBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMKColBase">
+    <Position X="28.75" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavMKColBase.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMKColBase.DavMKColResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMKColBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMoveBase">
+    <Position X="19" Y="21" Width="2" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavMoveBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavMoveBase.DavMoveResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavMoveBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavOptionsBase">
+    <Position X="12.5" Y="15" Width="3" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavOptionsBase.cs</FileName>
+      <HashCode>AAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavOptionsBase.HttpMethods" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavOptionsBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPropertyBase">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavPropertyBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAQAAAAAAAQAAAAAIAAAABAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPropFindBase">
+    <Position X="36" Y="18.75" Width="3" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavPropFindBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAEgAAAAAAAAAAIEAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPropFindBase.PropertyRequestType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavPropFindBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPropPatchBase">
+    <Position X="46.75" Y="15" Width="3" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavPropPatchBase.cs</FileName>
+      <HashCode>AAAAAAABAgAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPropPatchBase.DavPropPatchResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavPropPatchBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPutBase">
+    <Position X="54.25" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavPutBase.cs</FileName>
+      <HashCode>AAAIAAAAAAAAAAAAAQAAAAQAAAAAACAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavPutBase.DavPutResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavPutBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavReportBase">
+    <Position X="32.25" Y="18.75" Width="3" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavReportBase.cs</FileName>
+      <HashCode>AAAACAQAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavReportBase.VersionReportType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavReportBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavResourceBase">
+    <Position X="11.25" Y="19.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DAVResourceBase.cs</FileName>
+      <HashCode>QAAAEERAAQAAAQAGAAAAQgQiBAAgAFABIAAQBgIiCAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.ResourcePropertyAttribute" Collapsed="true">
+    <Position X="67.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DAVResourceBase.cs</FileName>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavResourceFindBase">
+    <Position X="34.5" Y="15" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavResourceFindBase.cs</FileName>
+      <HashCode>CAEEAAAAAAAAAAAAAAAEABQAAAQAAAAAAAAAACAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavUnlockBase">
+    <Position X="50.5" Y="15" Width="3" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavUnlockBase.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAEAAAIAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavUnlockBase.DavUnlockResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Framework\BaseClasses\DavUnlockBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.BaseClasses.DavVersionControlBase">
+    <Position X="57.75" Y="15" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Framework\BaseClasses\DavVersionControlBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Classes.DavLockProperty" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Classes\DavLockProperty.cs</FileName>
+      <HashCode>AICAAAAAIBAAAAAeAAhAAAAAAgAIIBAEAAAICCBAEFA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Classes.DavProperty">
+    <Position X="10.25" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Framework\Classes\DavProperty.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAIAAAQAAAAAAAAAwAAAAAAABQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Classes.DavPropertyAttribute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="67.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Classes\DavPropertyAttribute.cs</FileName>
+      <HashCode>AAAAAAAAAEBAAIAIAAAAAAACAAEAAAAEAAAABAAAARA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Classes.DavRefreshEventArgs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="65.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Classes\DavRefreshEventArgs.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAEIAAgAAAAAAAAAAAAAAAAAACAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Classes.DavResourceVersion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Classes\DavResourceVersion.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Collections.DavLockPropertyCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="63.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Collections\DavLockPropertyCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Collections.DavProcessErrorCollection" Collapsed="true">
+    <Position X="65.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Collections\DavProcessErrorCollection.cs</FileName>
+      <HashCode>AAIAAAAAAAAAACAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Collections.DavPropertyAttributeCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Collections\DavPropertyAttributeCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAICAEAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Collections.DavPropertyCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="63.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Collections\DavPropertyCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAICCAABAAAAgAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Collections.DavResourceCollection" Collapsed="true">
+    <Position X="67.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Collections\DavResourceCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Collections.DavResourceVersionCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="63.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Collections\DavResourceVersionCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.InternalFunctions" Collapsed="true">
+    <Position X="65.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\InternalFunctions.cs</FileName>
+      <HashCode>QQAAABgAAAAAAAAAgAAAAAAAAAAAAQAAEAAAAAAAAEE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.WebDavException" Collapsed="true">
+    <Position X="62" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\WebDavException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.WebDavProcessor" Collapsed="true">
+    <Position X="63.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\WebDavProcessor.cs</FileName>
+      <HashCode>AIIAAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Resources.DavFile">
+    <Position X="10.25" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Resources\DavFile.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphorium.WebDAV.Server.Framework.Resources.DavFolder">
+    <Position X="12.5" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Resources\DavFolder.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Sphorium.WebDAV.Server.Framework.Interfaces.IDavRequest" Collapsed="true">
+    <Position X="62" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Interfaces\IDavRequest.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sphorium.WebDAV.Server.Framework.Interfaces.IDavRequestProcessError" Collapsed="true">
+    <Position X="63.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Interfaces\IDavRequestProcessError.cs</FileName>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Sphorium.WebDAV.Server.Framework.LockOwnerType" Collapsed="true">
+    <Position X="63.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Enumerators.cs</FileName>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sphorium.WebDAV.Server.Framework.LockType" Collapsed="true">
+    <Position X="67.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Enumerators.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sphorium.WebDAV.Server.Framework.LockScope" Collapsed="true">
+    <Position X="65.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Enumerators.cs</FileName>
+      <HashCode>AAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sphorium.WebDAV.Server.Framework.DepthType" Collapsed="true">
+    <Position X="62" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Enumerators.cs</FileName>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sphorium.WebDAV.Server.Framework.PropertyBehavior" Collapsed="true">
+    <Position X="62" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Enumerators.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sphorium.WebDAV.Server.Framework.ResourceType" Collapsed="true">
+    <Position X="63.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Framework\Enumerators.cs</FileName>
+      <HashCode>AAAAAAAAIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

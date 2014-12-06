@@ -1,0 +1,9 @@
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\bin\Debug\Sphorium.WebDAV.Server.Framework.dll.config
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\bin\Debug\Sphorium.WebDAV.Server.Framework.dll
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\bin\Debug\Sphorium.WebDAV.Server.Framework.pdb
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\bin\Debug\Sphorium.WebDAV.Server.Framework.xml
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\obj\Debug\Sphorium.WebDAV.Server.Framework.csprojResolveAssemblyReference.cache
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\obj\Debug\Sphorium.WebDAV.Server.Framework.FrameworkResources.resources
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\obj\Debug\Sphorium.WebDAV.Server.Framework.csproj.GenerateResource.Cache
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\obj\Debug\Sphorium.WebDAV.Server.Framework.dll
+D:\Projects\Tools\XDav\xDav\Sphorium.WebDAV.Server.Framework\obj\Debug\Sphorium.WebDAV.Server.Framework.pdb

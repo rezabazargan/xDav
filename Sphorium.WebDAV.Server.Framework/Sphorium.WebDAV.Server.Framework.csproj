@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FA99EA4-A640-4463-B3F1-A77CD0616776}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Sphorium.WebDAV.Server.Framework</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sphorium.WebDAV.Server.Framework</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>Sphorium.WebDAV.Server.Framework.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Sphorium.WebDAV.Server.Framework.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web">
+      <Name>system.web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavCopyBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavCopyMoveBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavDeleteBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavGetBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavHeadBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavLockBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavMethodBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavMKColBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavMoveBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavOptionsBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavPropertyBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavPropFindBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavPropPatchBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavPutBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavReportBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavResourceBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavResourceFindBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavUnlockBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\BaseClasses\DavVersionControlBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Security\AuthenticationArgs.cs" />
+    <Compile Include="Framework\Security\AuthorizationArgs.cs" />
+    <Compile Include="Framework\Security\DigestAuthorizationArgs.cs" />
+    <Compile Include="Framework\Security\BasicAuthorizationArgs.cs" />
+    <Compile Include="Framework\Classes\DavModuleProcessRequestArgs.cs" />
+    <Compile Include="Framework\Classes\DavLockProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Classes\DavProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Classes\DavPropertyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Classes\DavRefreshEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Classes\DavResourceVersion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Collections\DavLockPropertyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Collections\DavProcessErrorCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Collections\DavPropertyAttributeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Collections\DavPropertyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Collections\DavResourceCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Collections\DavResourceVersionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Enumerators.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Interfaces\IDavRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Interfaces\IDavRequestProcessError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\InternalFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Linq\IEnumerableExtensions.cs" />
+    <Compile Include="Framework\Resources\DavFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Resources\DavFolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\WebDavException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\WebDAVModule.cs" />
+    <Compile Include="Framework\WebDavProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrameworkResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="History.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Framework ClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>if exist "../../../Sphorium WebDAV File System Client/FrameworkAssemblies" copy "$(TargetPath)" "../../../Sphorium WebDAV File System Client/FrameworkAssemblies/$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

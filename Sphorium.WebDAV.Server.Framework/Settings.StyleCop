@@ -1,0 +1,14 @@
+<StyleCopSettings Version="4.3">
+  <GlobalSettings>
+    <StringProperty Name="LinkedSettingsFile">WebDAV_NET.StyleCop</StringProperty>
+    <StringProperty Name="MergeSettingsFiles">Linked</StringProperty>
+  </GlobalSettings>
+  <Analyzers>
+    <Analyzer AnalyzerId="Microsoft.StyleCop.CSharp.DocumentationRules">
+      <AnalyzerSettings>
+        <StringProperty Name="CompanyName">Sphorium Technologies</StringProperty>
+        <StringProperty Name="Copyright">Copyright (c) Sphorium Technologies. All rights reserved.</StringProperty>
+      </AnalyzerSettings>
+    </Analyzer>
+  </Analyzers>
+</StyleCopSettings>

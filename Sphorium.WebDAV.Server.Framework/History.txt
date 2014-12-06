@@ -1,0 +1,15 @@
+Version 1.2.0.1850
+- Fixed lock bug
+- Fixed RequestXml bug
+
+Version 2.0
+- Converted to VS 2005
+
+Version 3.0
+- Converted to VS 2008 - Out of Beta
+
+Version 3.1
+- Utilizing 3.5 framework and resolved minor bug fixes
+
+Version 3.2.1
+- Minor enhancements

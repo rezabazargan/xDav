@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.35" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">http://www.gotdotnet.com/team/fxcop//xsl/1.35/FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-us" />
+  <VersionAware>False</VersionAware>
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/bin/Debug/Sphorium.WebDAV.Server.Framework.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.35">
+  <Namespaces>
+   <Namespace Name="Sphorium.WebDav.Server.Framework.Classes">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2006-03-23 13:25:49Z">
+      <Issue>
+       <Item>Sphorium.WebDav.Server.Framework.Classes</Item>
+      </Issue>
+      <Notes>
+       <User Name="germinai">
+        <Note Id="0" />
+        <Note Id="3" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="Sphorium.WebDav.Server.Framework.Resources">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2006-03-23 13:25:49Z">
+      <Issue>
+       <Item>Sphorium.WebDav.Server.Framework.Resources</Item>
+      </Issue>
+      <Notes>
+       <User Name="germinai">
+        <Note Id="0" />
+        <Note Id="3" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/bin/Debug/Sphorium.WebDAV.Server.Framework.dll">
+    <Modules>
+     <Module Name="sphorium.webdav.server.framework.dll">
+      <Namespaces>
+       <Namespace Name="Sphorium.WebDav.Server.Framework">
+        <Types>
+         <Type Name="WebDavProcessor">
+          <Members>
+           <Member Name="ProcessRequest(System.Web.HttpApplication,System.Boolean):System.Void">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2006-03-23 13:25:49Z">
+              <Issue>
+               <Item>WebDavProcessor.ProcessRequest(HttpApplication, Boolean):Void</Item>
+               <Item>System.Exception</Item>
+              </Issue>
+             </Message>
+             <Message Id="_error" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2006-03-23 13:25:49Z">
+              <Issue>
+               <Item>WebDavProcessor.ProcessRequest(HttpApplication, Boolean):Void</Item>
+               <Item>_error</Item>
+               <Item>System.String</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="Sphorium.WebDav.Server.Framework.BaseClasses">
+        <Types>
+         <Type Name="DavGetBase">
+          <Members>
+           <Member Name="ResponseOutput">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2006-03-23 13:25:49Z">
+              <Issue>
+               <Item>DavGetBase.ResponseOutput:Byte[]</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DavMethodBase+ServerResponseCode">
+          <Members>
+           <Member Name="MultiStatus">
+            <Messages>
+             <Message Id="Multi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2006-03-23 13:25:49Z">
+              <Issue Name="Member">
+               <Item>Multi</Item>
+               <Item>ServerResponseCode.MultiStatus</Item>
+              </Issue>
+              <Notes>
+               <User Name="germinai">
+                <Note Id="1" />
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="Sphorium.WebDav.Server.Framework.Classes">
+        <Types>
+         <Type Name="DavPropertyAttribute">
+          <Members>
+           <Member Name=".ctor(System.Xml.XPath.XPathNavigator)">
+            <Messages>
+             <Message Id="0#x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2006-03-24 16:42:21Z">
+              <Issue Name="Parameter">
+               <Item>DavPropertyAttribute.DavPropertyAttribute(XPathNavigator)</Item>
+               <Item>x</Item>
+               <Item>xPathAttribute</Item>
+              </Issue>
+              <Notes>
+               <User Name="germinai">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="germinai">
+    <Note Id="0" Modified="2006-03-23 16:24:51Z">The namespace will grow in the future</Note>
+    <Note Id="1" Modified="2006-03-23 16:32:16Z">By design</Note>
+    <Note Id="2" Modified="2006-03-24 16:46:13Z">By design</Note>
+    <Note Id="3" Modified="2006-03-24 16:46:33Z">By design... the namespaces will grow in the future</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify '{0}' to catch a more specific exception than '{1}' or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of the unrecognized token '{0}' in member name '{1}'.</Resolution>
+    <Resolution Name="Parameter">In method {0}, correct the spelling of the unrecognized token '{1}' in parameter name '{2}' or strip it entirely if it represents any sort of hungarian notation.</Resolution>
+   </Rule>
+   <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+    <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   </Rule>
+   <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+    <Resolution Name="Default">{0} declares a local, '{1}', of type {2}, which is never used or is only assigned to. Use this local or remove it.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
