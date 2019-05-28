@@ -55,6 +55,7 @@ namespace XDav.Helper
         {
             get
             {
+                 if (string.IsNullOrEmpty(FileName)) return null;
                 return new XDavFile(FileName);
             }
         }
